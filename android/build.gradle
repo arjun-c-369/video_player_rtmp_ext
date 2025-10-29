@@ -2,28 +2,27 @@ group 'shop.itbug.video_player_rtmp_ext'
 version '1.0-SNAPSHOT'
 
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://maven.aliyun.com/repository/central' }
-        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
-            allowInsecureProtocol = true
-        }
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://jitpack.io' } // ✅ Needed here
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public'
+        allowInsecureProtocol = true
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        allowInsecureProtocol = true
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        allowInsecureProtocol = true
     }
 }
 
