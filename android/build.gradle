@@ -68,6 +68,6 @@ dependencies {
     implementation("io.github.carguo:gsyvideoplayer:11.1.0") {
         exclude group: "io.antmedia", module: "rtmp-client"
     }
-    implementation("com.github.mcxinyu:LibRtmp-Client-for-Android:v3.2.0.m2")
+    implementation "com.github.mcxinyu:LibRtmp-Client-for-Android:v3.2.0.m2"
 
 }
