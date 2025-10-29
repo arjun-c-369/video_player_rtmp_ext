@@ -55,6 +55,14 @@ class VideoPlayerRtmpExtController {
     await channel.initIJKPlayController(source);
   }
 
+  Future<void> mute() async {
+    await channel.mute();
+  }
+  
+  Future<void> unmute() async {
+    await channel.unmute();
+  }
+  
   ///播放
   Future<void> play() async {
     await channel.play();
