@@ -157,6 +157,14 @@ class IJKPlayerController {
     await state.play();
   }
 
+  Future<void> mute() async {
+    await state._platformController.mute();
+  }
+
+  Future<void> unmute() async {
+    await state._platformController.unmute();
+  }
+  
   ///恢复播放.
   Future<void> resume() async {
     await state._platformController.resume();
