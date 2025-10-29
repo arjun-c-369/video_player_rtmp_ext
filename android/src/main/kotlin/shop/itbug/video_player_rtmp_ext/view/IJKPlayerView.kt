@@ -90,6 +90,17 @@ class IJKPlayerView(
                 player.onVideoReset()
                 result.success(true)
             }
+
+            "controller-mute" -> {
+                player.setNeedMute(true)
+                result.success(true)
+            }
+
+            "controller-unmute" -> {
+                player.setNeedMute(false)
+                result.success(true)
+            }
+            
             "controller-resume" -> {
                 player.onVideoResume()
                 result.success(true)
