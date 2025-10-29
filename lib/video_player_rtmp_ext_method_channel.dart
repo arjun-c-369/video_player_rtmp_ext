@@ -54,6 +54,16 @@ class MethodChannelVideoPlayerRtmpExt extends VideoPlayerRtmpExtPlatform {
   Future<bool> isPlaying() async {
     return await _methodChannel.invokeMethod("controller-get-state");
   }
+  
+  @override
+  Future<bool> mute() async {
+    return await _methodChannel.invokeMethod("controller-mute");
+  }
+  
+  @override
+  Future<bool> unmute() async {
+    return await _methodChannel.invokeMethod("controller-unmute");
+  }
 
   @override
   Future<void> stop() async {
